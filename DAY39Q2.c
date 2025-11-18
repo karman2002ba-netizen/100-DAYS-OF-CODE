@@ -1,0 +1,23 @@
+//Find the sum of main diagonal elements for a square matrix.
+
+#include <stdio.h>
+
+int main() {
+    int matrix[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    int n = 3;
+    int sum = 0;
+
+    
+    for (int i = 0; i < n; i++) {
+        sum += matrix[i][i]; 
+    }
+
+    printf("Sum of main diagonal elements = %d\n", sum);
+
+    return 0;
+}
